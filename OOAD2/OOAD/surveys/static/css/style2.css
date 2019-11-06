@@ -1,0 +1,261 @@
+.nav {
+    line-height: 40px; padding-top: 60px; background-color:#4363a2;
+}
+
+.admin-content{
+    
+    padding-top: 40px;
+    
+}
+/* Styling for the side bar links */
+.nav-pills>li>a {
+    border-radius: 5px;
+    color: white;
+    font-family: Open Sans;
+}
+/* Styling for the side bar links */
+
+.nav-pills>li>a:hover {
+    border-radius: 5px;
+    color: black;
+    font-family: Open Sans;
+      text-decoration: underline;
+}
+
+
+/*styling for the body text in the user panel*/
+
+/* tooltip link */
+
+.tip {
+	display: inline-block;
+	cursor: pointer;
+	
+}
+/* Styling for the inside on the tool tip, when scrolled over it will bring up a moddle and the moddle has to fit to pictures along with all the text 
+right now its not working on chrome but it is working on safary
+
+*/
+
+.tooltip-inner {
+    max-width: 80%;
+    /* If max-width does not work, try using width instead */
+    width: 80%; 
+	background-color: white;
+}
+
+/* tooltip content */
+
+.tooltip h2 {
+	white-space: nowrap;
+	width: 400px;
+	color: black;
+}
+/*end tool tip stying*/
+
+
+.navigation-item-link:hover:after {
+  width: 100%;
+}
+
+/*styling for the mini tabs within the user profile*/
+.header-navigation .navigation-item-link:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #389AFA;
+  position: relative;
+  bottom: -20px;
+}
+
+.header-navigation .navigation-item-link:hover {
+  color: black;
+}
+/*styling for the links at the top of the user profile page*/
+.header-navigation .navigation-item-link {
+  color: #7e8a9b;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: inline-block;
+}
+.header-navigation .navigation-item {
+  margin-right: 2.85rem;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+/*styling for the hover event within the users profile*/
+.header-left-link:hover {
+  text-decoration: underline;
+  color: #7e8a9b;
+}
+.header-left-link {
+  color: #3da3f9;
+  margin-left: 0.75rem;
+}
+
+.header-left-city:after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #C2C8CF;
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+
+.header-left-city {
+  margin-left: 0.0rem;
+  color: #F0843C;
+}
+.header2 {
+  font-weight: bold;
+    margin-bottom: 1.43rem;
+    font-size: 44px;
+    font-family: 'Open Sans', Bold;
+    color: #4363a2;
+
+}
+
+.header {
+  padding: 2.85rem .0rem 0;
+  border-bottom: none;
+}
+
+.header-intro, .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-intro {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.85rem;
+}
+
+.header-right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*end of the header styling*/
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+/*styling for the step wizard, this makes the buttons horizontal*/
+.stepwizard-step {
+    display: table-cell;
+       text-align: left;
+           padding-top: 30px;
+    position: relative;
+}
+/*styling for the step wizard, this makes the buttons turn a different color on the next step*/
+
+.stepwizard-row:before {
+    top: 45px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 69%;
+    text-align: left;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+/*this draws the table so we can see the line in between the buttons*/
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+
+/* this links the line with the buttons  */
+
+.stepwizard-row {
+    display: table-row;
+}
+/* this is the space from the circles and the header at the top*/
+.stepwizard-step p {
+    margin-top: 10px;
+
+}
+
+/* This has the key frames within each button */
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+/* This is the blue text for the credit card headers */
+.creditcardtext{
+    color: #3B5998;
+  font-family: "Open Sans"; font-size: 14px !important; font-style: normal; font-variant: normal; font-weight: 600; line-height: 26.4px;   
+   padding-top: 20px;
+}  
+
+
+/* styling for blue line under the links in the mini user navbar */
+.navigation-item-link:hover:after {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
